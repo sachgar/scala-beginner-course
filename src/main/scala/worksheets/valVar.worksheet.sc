@@ -17,3 +17,8 @@ println("Finally I have : " + fruits + " fruits")
 // We can also use the old value of our var to calculate the new one
 bananas = bananas + 40
 println("Now I have " + bananas + " bananas")
+
+// To specify the type
+// In our exemple by default it's an Int
+val height = 4
+val size: Double = 2
