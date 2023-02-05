@@ -19,4 +19,5 @@ Currently available worksheets are:
 
 ```
 - Val and var (ValVar.worksheet.sc)
+- Function (Function.worksheet.sc)
 ```
