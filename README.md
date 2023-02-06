@@ -18,6 +18,7 @@ To see worksheet results (VS Code) you should:
 
 Currently available worksheets are:
 
+
 ```
 - Val and var 	(ValVar.worksheet.sc)
 - Function 	(Function.worksheet.sc)

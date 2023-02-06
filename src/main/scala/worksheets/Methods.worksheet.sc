@@ -8,7 +8,7 @@ division(5,10)(2)
 
 // It's also possible to create methods without any parameter
 def name: String = System.getProperty("user.name")
-println("Hello I am " + name  )
+println("Hello I am " + name)
 
 // To declare a method with the indented syntax (new feature with scala 3)
 def getYourFullName(firstName: String, surname: String) =
