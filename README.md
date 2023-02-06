@@ -11,6 +11,7 @@ This project uses sbt
 To find the worksheets you should go in the `src/main/scala/worksheets` folder
 
 To see worksheet results (VS Code) you should:
+
 - Install the Metals extension on VS Code
 - Clone the repo
 - Go to on the choosen worksheet and save the file (the results will appear)
@@ -18,6 +19,8 @@ To see worksheet results (VS Code) you should:
 Currently available worksheets are:
 
 ```
-- Val and var (ValVar.worksheet.sc)
-- Function (Function.worksheet.sc)
+- Val and var 	(ValVar.worksheet.sc)
+- Function 	(Function.worksheet.sc)
+- Methods 	(Methods.worksheet.sc)
+- Classes	(Class.worksheet.sc)
 ```
