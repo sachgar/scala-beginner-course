@@ -1,20 +1,31 @@
-// We can declare a simple function without parameters like that
-val getDevSize = () => 176
-println(getDevSize())
+// We can create an anonymous function (a function with no name, also called a lambda)
+(x: Float) => x
 
-// We can declare a function with one parameters like that
+// We can give it a name
 val getYourSize = (size: Float) => size
-println(getYourSize(185))
+getYourSize(185)
+
+// We can create function without parameters
+val getDevSize = () => 176
+getDevSize()
+
+// To specify the return type of a function
+val getDevSizeFloat = () => 176: Float
+getDevSizeFloat()
+
+// Function can have more than one parameters
+val getYourSizeTimeX = (size: Float, time: Int) => size * time
+getYourSizeTimeX(185, 2)
 
 // The classic function syntax is
 val getYourFullNameClassic = (firstName: String, surname: String) => {
     val fullName = firstName + " " + surname
     fullName
 }
-println(getYourFullNameClassic("Didier", "De Jong"))
+getYourFullNameClassic("Didier", "De Jong")
 
-// To declare a function with the indented syntax (new feature with scala 3)
+// To declare a function with the indented syntax (new scala 3 feature)
 val getYourFullNameIndentation = (firstName: String, surname: String) =>
     val fullName = firstName + " " + surname
     fullName
-println(getYourFullNameIndentation("Bob", "Dupond"))
+getYourFullNameIndentation("Bob", "Dupond")

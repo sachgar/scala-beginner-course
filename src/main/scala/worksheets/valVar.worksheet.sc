@@ -22,3 +22,10 @@ println("Now I have " + bananas + " bananas")
 // In our exemple by default it's an Int
 val height = 4
 val size: Double = 2
+
+// Blocks allow to combine expression together
+// The last expression is the result of the block
+println({
+  val x = 1 + 1
+  x + 1
+})
