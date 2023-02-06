@@ -2,7 +2,7 @@
 def multiplication(x: Int, y: Int): Int = x * y
 multiplication(12 ,45)
 
-// It's possible to pass multiple parameter lists to one method (currying)
+// It's possible to pass multiple parameter lists to one method
 def division(x: Int, y: Int)(divider: Int) = (x * y) / divider
 division(5,10)(2)
 
