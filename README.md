@@ -19,9 +19,11 @@ To see worksheet results (VS Code) you should:
 Currently available worksheets are:
 
 ```
-- Val and var 	(ValVar.worksheet.sc)
-- Function 	(Function.worksheet.sc)
-- Methods 	(Methods.worksheet.sc)
-- Method Versus Function (MethodVsFunction.worksheet.sc)
-- Classes	(Class.worksheet.sc)
+- Val and var ------------->(ValVar.worksheet.sc)
+- Function ---------------->(Function.worksheet.sc)
+- Methods ----------------->(Methods.worksheet.sc)
+- Classes ----------------->(Classes.worksheet.sc)
+- Objects ----------------->(Objects.worksheet.sc)
+- Method Versus Function -->(MethodVsFunction.worksheet.sc)
 ```
+
