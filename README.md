@@ -25,5 +25,5 @@ Currently available worksheets are:
 - Classes ----------------->(Classes.worksheet.sc)
 - Objects ----------------->(Objects.worksheet.sc)
 - Method Versus Function -->(MethodVsFunction.worksheet.sc)
+- Traits ------------------>(Traits.worksheet.sc)
 ```
-
