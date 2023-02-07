@@ -12,7 +12,7 @@ case class Animal(category: String, name: String)
 val Pipou = Animal("Dog", "Pipou")
 val Garfield = Animal("Cat", "Garfield")
 val anotherPipou = Animal("Dog", "Pipou")
-println(s"This is a ${Garfield.category} and his name is ${Garfield.name}")
+s"This is a ${Garfield.category} and his name is ${Garfield.name}"
 
 // Case classes are compared by value
 Pipou == anotherPipou
@@ -21,4 +21,9 @@ Garfield == anotherPipou
 // Classes are compared by reference
 val anotherSentence = Sentence("I", "apple")
 newSentence == anotherSentence
-newSentence.addVerb("Hate") == anotherSentence.addVerb("Hate")
+
+// You cannot access the class constructor parameters by default
+// newSentence.pronoun // -> does not compile
+
+// But you can with a case class
+Garfield.category
