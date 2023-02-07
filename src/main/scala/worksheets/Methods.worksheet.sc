@@ -15,3 +15,15 @@ def getYourFullName(firstName: String, surname: String) =
     val fullName = firstName + " " + surname
     fullName.toUpperCase()
 getYourFullName("Ron", "Baguette")
+
+// Specify a default parameter so you don't have to pass it when calling the function
+def add(a: Int = 4, b: Int = 2): Int = a + b
+
+// Call the function without parameters
+add()
+// Pass parameters normally
+add(3, 9)
+// Only specify b by name
+add(b = 10)
+// Specify both parameters in reverse order
+add(b = 1, a = 99)
