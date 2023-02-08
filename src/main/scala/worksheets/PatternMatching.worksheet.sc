@@ -23,6 +23,17 @@ def matchTest(x: Int): String =
 
 matchTest(randomInt)
 
+def matchOnType(v: AnyVal): AnyVal =
+  v match
+    case i: Int => i
+    case c: Char => c
+    case d: Double => d
+    case _ => ()
+
+matchOnType(1)
+matchOnType('a')
+matchOnType(2.0)
+
 // We are creating a sealed trait, this means that all the implementations of this trait
 // must be declared in the same file
 // This is useful because it allows the compiler to check if we are handling all the cases
