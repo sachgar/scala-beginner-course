@@ -58,7 +58,7 @@ def adoptAnimal(animal: Animal): String =
 val dog = Dog("Papel", "Border Collie")
 val cat = Cat("Nyx", false)
 val dangerousCat = Cat("Kit")
-val parrot = Parrot("", true)
+val parrot = Parrot("Lucas", true)
 val something = OtherAnimal("Mouse")
 
 adoptAnimal(dog)
@@ -66,7 +66,7 @@ adoptAnimal(cat)
 adoptAnimal(parrot)
 adoptAnimal(something)
 
-// Let's create a second pattern matching function with pattern guards
+// Let's create a second pattern matching method with pattern guards
 def checkAnimal(animal: Animal): String =
   animal match
     case Cat(_, isSecretelyPlanningToKillYou) if isSecretelyPlanningToKillYou =>
