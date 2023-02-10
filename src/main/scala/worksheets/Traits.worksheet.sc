@@ -8,16 +8,13 @@ trait Animal:
         s"Ate $food"
 
 class Dog(val color: String) extends Animal :
-    override def move(): String =
-        "Run"
+    override def move(): String = "Run"
 
 class Cat(val color: String) extends Animal :
-    override def move(): String =
-        "Walk"
+    override def move(): String = "Walk"
 
 class Parrot(val color: String) extends Animal :
-    override def move(): String =
-        "Fly"
+    override def move(): String = "Fly"
 
 val dog = Dog("Black")
 val cat = Cat("White")
