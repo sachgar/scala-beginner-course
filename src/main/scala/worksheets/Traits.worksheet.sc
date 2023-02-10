@@ -1,39 +1,30 @@
-/**
-    * Trait are abstract data types containing certain fields and methods
-    * To declare a simple traits
-    */
-trait AnimalColor:
-    def category(category: String): String
-    def name(name: String): String
+// Let's define a trait for animal with values and methods
+trait Animal:
+    val color : String
 
-// It's also possible to have a default implementation
-trait AnimalWithDefaultImplementation: 
-    def color(color: String): String =
-        color.toLowerCase()
+    def move(): String
 
+    def eat(food: String): String =
+        s"Ate $food"
 
-/**
-    * A class can only extend one other class however it can extend multiple traits
-    * To extend a class we should use "extends"
-    * If we want extend our class to multiple traits we should use "with"
-    * It's possible to override an implementation with "override"
-    */
+class Dog(val color: String) extends Animal :
+    override def move(): String =
+        "Run"
 
-class MyAnimal extends AnimalColor with AnimalWithDefaultImplementation :
-    var animalCategory: String = "UNKNOW"
-    var animalName: String = "Unknow"
-    var animalColor: String = "unknow"
-    override def category(category: String): String = 
-        animalCategory = category.toUpperCase()
-        animalCategory
-    override def name(name: String): String = 
-        animalName = name
-        animalName
-    override def color(color: String): String =
-        animalColor = color.toLowerCase()
-        animalColor
+class Cat(val color: String) extends Animal :
+    override def move(): String =
+        "Walk"
 
-val myCat = MyAnimal()
-myCat.category("Cat")
-myCat.color("Blue")
-println(myCat.animalCategory + " " + myCat.animalName + " " + myCat.animalColor)
+class Parrot(val color: String) extends Animal :
+    override def move(): String =
+        "Fly"
+
+val dog = Dog("Black")
+val cat = Cat("White")
+val parrot = Parrot("Purple")
+
+dog.eat("Apple")
+dog.move()
+cat.color
+cat.move()
+parrot.move()

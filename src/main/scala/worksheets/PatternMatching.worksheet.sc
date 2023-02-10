@@ -40,7 +40,7 @@ matchOnType(2.0)
 sealed trait Animal
 
 case class Dog(name: String, breed: String) extends Animal
-case class Cat(nickname: String, isSecretelyPlanningToKillYou: Boolean = true) extends Animal
+case class Cat(nickname: String, isSecretlyPlanningToKillYou: Boolean = true) extends Animal
 case class Parrot(surname: String, isTalking: Boolean) extends Animal
 case class OtherAnimal(kind: String) extends Animal
 
@@ -69,8 +69,8 @@ adoptAnimal(something)
 // Let's create a second pattern matching method with pattern guards
 def checkAnimal(animal: Animal): String =
   animal match
-    case Cat(_, isSecretelyPlanningToKillYou) if isSecretelyPlanningToKillYou =>
-      "This cat is secretely planning to kill you. Be careful!"
+    case Cat(_, isSecretlyPlanningToKillYou) if isSecretlyPlanningToKillYou =>
+      "This cat is secretly planning to kill you. Be careful!"
     case Parrot(_, isTalking) if isTalking =>
       "This parrot is a talker"
     case other =>
